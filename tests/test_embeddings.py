@@ -12,5 +12,3 @@ def test_build_and_query_index():
     assert len(results) >= 1
     assert isinstance(results[0][0], str)
     assert isinstance(results[0][1], float)
-
-

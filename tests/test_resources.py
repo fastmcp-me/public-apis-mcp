@@ -14,5 +14,3 @@ def test_catalog_indexed():
     assert len(items) == len(idx)
     first_id = items[0].id
     assert first_id in idx
-
-

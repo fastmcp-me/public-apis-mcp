@@ -19,5 +19,3 @@ class SearchResult(BaseModel):
     name: str
     score: float
     snippet: str
-
-

@@ -93,8 +93,6 @@ def _embed_texts_fastembed(texts: list[str], model_id: Optional[str]) -> np.ndar
     return np.array(vectors, dtype=np.float32)
 
 
-
-
 def embed_texts(
     texts: list[str], model_id: Optional[str] = None
 ) -> tuple[np.ndarray, str]:

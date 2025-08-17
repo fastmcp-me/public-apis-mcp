@@ -11,5 +11,3 @@ def test_search_tool_smoke():
     # Instead, we test via module functions: ensure index and run embedding.
     # Here we just ensure server creation doesn't raise and tools are registered.
     assert mcp is not None
-
-

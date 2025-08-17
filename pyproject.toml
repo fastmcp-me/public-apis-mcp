@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "public-apis-mcp"
+version = "0.1.0"
+description = "MCP server exposing a catalog of public APIs with embedding-based lookups"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Alex", email = "alex@galea.dev" }
+]
+keywords = ["mcp", "model context protocol", "public", "free", "api", "apis"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Typing :: Typed",
+]
+dependencies = [
+  "fastmcp>=2.10",
+  "pydantic>=2",
+  "numpy>=1.24",
+  "fastembed>=0.3.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "ruff>=0.5",
+  "mypy>=1.10",
+]
+
+[project.urls]
+Homepage = "https://pypi.org/project/public-apis-mcp/"
+Repository = "https://github.com/zazencodes/public-apis-mcp"
+Changelog = "https://github.com/zazencodes/public-apis-mcp/blob/main/CHANGELOG.md"
+
+[project.scripts]
+public-apis-mcp = "public_apis_mcp.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["public_apis_mcp*"]
+
+[tool.setuptools.package-data]
+public_apis_mcp = ["datastore/index.json", "datastore/index.npz"]
+
+

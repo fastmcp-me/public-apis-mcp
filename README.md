@@ -2,6 +2,10 @@
 
 Catalog of free public APIs with semantic search.
 
+> The catalog includes an extensive list of APIs from the [public-apis](https://github.com/public-apis/public-apis) GitHub
+> repo.   
+> Thank you to all the maintainers, contributors and API creators! 💯
+
 ## 🎯 Features
 
 - `search_public_apis`: embedding-based search over API names and descriptions

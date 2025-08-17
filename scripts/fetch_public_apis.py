@@ -1,7 +1,6 @@
 import argparse
 import json
 import re
-import sys
 import uuid
 from typing import Dict, List, Tuple
 

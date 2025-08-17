@@ -5,7 +5,7 @@ import os
 from dataclasses import dataclass
 from importlib import resources
 from pathlib import Path
-from typing import Iterable, List, Optional, Tuple
+from typing import Optional, Tuple
 
 import numpy as np
 
@@ -23,7 +23,7 @@ DEFAULT_FASTEMBED_MODEL = "BAAI/bge-small-en-v1.5"
 
 
 def _datastore_dir() -> Path:
-    return Path(resources.files("public_apis_mcp")) / "datastore"
+    return Path(str(resources.files("public_apis_mcp"))) / "datastore"
 
 
 def index_path() -> Path:

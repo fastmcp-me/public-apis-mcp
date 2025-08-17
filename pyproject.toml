@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "public-apis-mcp"
 version = "0.1.0"
-description = "MCP server exposing a catalog of public APIs with embedding-based lookups"
+description = "MCP server exposing a catalog of free APIs with embedding-based lookups"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-  { name = "Alex", email = "alex@galea.dev" }
+  { name = "Alexander Galea", email = "alex@galea.dev" }
 ]
 keywords = ["mcp", "model context protocol", "public", "free", "api", "apis"]
 classifiers = [
@@ -27,9 +27,10 @@ dependencies = [
   "fastembed>=0.3.2",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
   "pytest>=8",
+  "pytest-cov",
   "ruff>=0.5",
   "mypy>=1.10",
 ]

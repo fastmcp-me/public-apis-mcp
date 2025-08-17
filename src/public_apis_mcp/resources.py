@@ -11,7 +11,7 @@ from .types import ApiItem
 
 
 def _datastore_dir() -> Path:
-    return Path(resources.files("public_apis_mcp")) / "datastore"
+    return Path(str(resources.files("public_apis_mcp"))) / "datastore"
 
 
 def catalog_path() -> Path:

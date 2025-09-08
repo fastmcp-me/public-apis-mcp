@@ -15,4 +15,4 @@ def create_server() -> FastMCP:
 
 def run() -> None:
     mcp = create_server()
-    mcp.run()  # Run over STDIO
+    mcp.run(show_banner=False)  # Run over STDIO
